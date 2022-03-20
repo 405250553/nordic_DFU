@@ -1,0 +1,51 @@
+setting 生成指令 : nrfutil settings generate --family NRF52 --application application.hex --application-version 1 --bootloader-version 1 --bl-settings-version 1 setting.hex
+
+pkg 生成指令 : nrfutil pkg generate --hw-version 52 --sd-req 0xAF --application-version 1 --application application.hex --key-file private_key.pem app_dfu_package.zip
+
+pkg ps :
+
+SoftDevice	FWID (sd-req)
+s112_nrf52_6.0.0	0xA7
+s112_nrf52_6.1.0	0xB0
+s112_nrf52_6.1.1	0xB8
+s112_nrf52_7.0.0	0xC4
+s112_nrf52_7.0.1	0xCD
+s113_nrf52_7.0.0	0xC3
+s113_nrf52_7.0.1	0xCC
+s130_nrf51_1.0.0	0x67
+s130_nrf51_2.0.0	0x80
+s132_nrf52_2.0.0	0x81
+s130_nrf51_2.0.1	0x87
+s132_nrf52_2.0.1	0x88
+s212_nrf52_2.0.1	0x8D
+s332_nrf52_2.0.1	0x8E
+s132_nrf52_3.0.0	0x8C
+s132_nrf52_3.1.0	0x91
+s132_nrf52_4.0.0	0x95
+s132_nrf52_4.0.2	0x98
+s132_nrf52_4.0.3	0x99
+s132_nrf52_4.0.4	0x9E
+s132_nrf52_4.0.5	0x9F
+s212_nrf52_4.0.5	0x93
+s332_nrf52_4.0.5	0x94
+s132_nrf52_5.0.0	0x9D
+s212_nrf52_5.0.0	0x9C
+s332_nrf52_5.0.0	0x9B
+s132_nrf52_5.1.0	0xA5
+s132_nrf52_6.0.0	0xA8
+s132_nrf52_6.1.0	0xAF
+s132_nrf52_6.1.1	0xB7
+s132_nrf52_7.0.0	0xC2
+s132_nrf52_7.0.1	0xCB
+s140_nrf52_6.0.0	0xA9
+s140_nrf52_6.1.0	0xAE
+s140_nrf52_6.1.1	0xB6
+s140_nrf52_7.0.0	0xC1
+s140_nrf52_7.0.1	0xCA
+s212_nrf52_6.1.1	0xBC
+s332_nrf52_6.1.1	0xBA
+s340_nrf52_6.1.1	0xB9
+
+pkg 顯示 : nrfutil pkg display package.zip
+
+key 生成指令 : nrfutil keys generate private.pem

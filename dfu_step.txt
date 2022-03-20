@@ -1,0 +1,13 @@
+1. python -m pip install nrfutil
+2. 打開bootloader工程（SDK15.2.0的dfu目录下secure_bootloader工程）P.S. BUILD會失敗
+	step 1:  解决uECC.h缺失问题
+		首先保证电脑连上网络，然后在nRF5_SDK_15.2.0_9412b96\external\micro-ecc\目录下，找到build_all.bat文件，双击 (電腦要先有git)
+
+	step 2: 解决Public key问题
+		想辦法安裝nrfutil指令
+		生成自己的私钥（private key） : nrfutil keys generate private.pem
+		根据私钥生成公钥（public key） : nrfutil keys display --key pk --format code private.pem --out_file public_key.c
+
+	step 2: 解决没有micro_ecc_lib_nrf52.a文件
+		安装gcc_arm编译器 (ex: gcc-arm-none-eabi-6-2017-q2-update-win32-sha2)
+		在nRF5_SDK_15.2.0_9412b96\external\micro-ecc\目录下，找到build_all.bat文件，双击
