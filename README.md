@@ -2,7 +2,9 @@
 ## 目錄:
 
 52DK_example:     52832 DK 版本的HEX
+
 Thingy52_example: THINGY52 版本的HEX
+
 (P.S. dfu_one_hot.bat window的bat檔，內包含了所有燒錄+setting生成+dfu update pkg生成 指令)
 
 dfu_project:      bootloader相關的project
