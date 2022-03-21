@@ -1,7 +1,7 @@
 # nordic_DFU
 ## 目錄:
 
-52DK_example:     52832 DK 版本的HEX
+**52DK_example:**     52832 DK 版本的HEX
 
 Thingy52_example: THINGY52 版本的HEX
 
