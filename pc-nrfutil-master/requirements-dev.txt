@@ -1,4 +1,0 @@
--r requirements.txt
-behave
-nose
-pyinstaller
