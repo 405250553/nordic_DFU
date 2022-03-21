@@ -1,4 +1,4 @@
-# nordic_DFU
+# nordic_DFU (base on sdk15.2)
 ## 目錄:
 
 **52DK_example:**     52832 DK 版本的HEX
