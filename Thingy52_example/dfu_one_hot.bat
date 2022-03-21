@@ -6,7 +6,7 @@
 echo *******************************************
 echo *            setting  generate              *
 echo *******************************************
-nrfutil settings generate --family NRF52 --application nrf52832_xxaa.hex --application-version 1 --bootloader-version 1 --bl-settings-version 1 setting.hex
+nrfutil settings generate --family NRF52 --application thingy52_accData_threshold.hex --application-version 1 --bootloader-version 1 --bl-settings-version 1 setting.hex
 
 echo.
 echo.
@@ -65,7 +65,7 @@ echo.
 echo *******************************************
 echo *              pkg generate                *
 echo *******************************************
-nrfutil pkg generate --hw-version 52 --sd-req 0xAF --application-version 1 --application nrf52832_xxaa.hex --key-file private_key.pem app_dfu_package.zip
+nrfutil pkg generate --hw-version 52 --sd-req 0xAF --application-version 1 --application thingy52_accData_threshold.hex --key-file private_key.pem app_dfu_package.zip
 
 
 echo.

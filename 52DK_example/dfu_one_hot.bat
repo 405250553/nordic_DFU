@@ -6,7 +6,7 @@
 echo *******************************************
 echo *            setting 生成指令              *
 echo *******************************************
-nrfutil settings generate --family NRF52 --application ble_app_uart_pca10040_s132.hex --application-version 1 --bootloader-version 1 --bl-settings-version 1 setting.hex
+nrfutil settings generate --family NRF52 --application ble_app_buttonless_dfu_pca10040_s132.hex --application-version 1 --bootloader-version 1 --bl-settings-version 1 setting.hex
 
 echo.
 echo.
@@ -40,7 +40,7 @@ nrfjprog --family NRF52 --program ./nrf52_bootloader.hex
 rem echo *******************************************
 rem echo *          Program Application             *
 rem echo *******************************************
-rem nrfjprog --family NRF52 --program ./nrf52832_xxaa.hex
+rem nrfjprog --family NRF52 --program ./ble_app_buttonless_dfu_pca10040_s132.hex
 
 
 rem echo *******************************************
@@ -65,7 +65,7 @@ echo.
 echo *******************************************
 echo *              pkg 生成指令                *
 echo *******************************************
-nrfutil pkg generate --hw-version 52 --sd-req 0xAF --application-version 1 --application ble_app_uart_pca10040_s132.hex --key-file private_key.pem app_dfu_package.zip
+nrfutil pkg generate --hw-version 52 --sd-req 0xAF --application-version 1 --application ble_app_buttonless_dfu_pca10040_s132.hex --key-file private_key.pem app_dfu_package.zip
 
 
 echo.
