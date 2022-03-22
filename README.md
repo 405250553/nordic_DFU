@@ -10,9 +10,8 @@
          ├──open_bootloader     (沒用過)
          └──example (hex only) (可以刪了)
 
-(P.S. 52DK_example 和 Thingy52_example 內的 dfu_one_hot.bat window的bat檔，內包含了所有燒錄+setting生成+dfu update pkg生成 指令)
-
 ```
+(P.S. 52DK_example 和 Thingy52_example 內的 dfu_one_hot.bat window的bat檔，內包含了所有燒錄+setting生成+dfu update pkg生成 指令)
 
 ## DFU Project 設定，參考教學
 
