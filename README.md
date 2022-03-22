@@ -2,16 +2,16 @@
 ## 目錄:
 
 ```
-├── 52DK_example
-    ├── dfu_one_hot.bat...
-├── Thingy52_example
-    ├── dfu_one_hot.bat...
+├── 52DK_example (52832 DK 版本的HEX)
+├── Thingy52_example (THINGY52 版本的HEX)
 ├── dfu_project
          ├── thingy52_secure_bootloader  (thingy52 bootloader的project)
          ├── secure_bootloader   (平常build bootloader的project)
          ├──open_bootloader     (沒用過)
          └──example (hex only) (可以刪了)
- 
+
+(P.S. 52DK_example 和 Thingy52_example 內的 dfu_one_hot.bat window的bat檔，內包含了所有燒錄+setting生成+dfu update pkg生成 指令)
+
 ```
 
 ## DFU Project 設定，參考教學
