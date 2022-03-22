@@ -1,13 +1,18 @@
 # nordic_DFU (base on sdk15.2)
 ## 目錄:
 
-**52DK_example:**     52832 DK 版本的HEX
-
-**Thingy52_example:** THINGY52 版本的HEX
-
-(P.S. dfu_one_hot.bat window的bat檔，內包含了所有燒錄+setting生成+dfu update pkg生成 指令)
-
-**dfu_project:**      bootloader相關的project
+```
+├── 52DK_example
+    ├── dfu_one_hot.bat...
+├── Thingy52_example
+    ├── dfu_one_hot.bat...
+├── dfu_project
+         ├── thingy52_secure_bootloader  (thingy52 bootloader的project)
+         ├── secure_bootloader   (平常build bootloader的project)
+         ├──open_bootloader     (沒用過)
+         └──example (hex only) (可以刪了)
+ 
+```
 
 ## DFU Project 設定，參考教學
 
